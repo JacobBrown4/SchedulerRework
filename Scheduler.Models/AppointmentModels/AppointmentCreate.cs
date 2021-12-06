@@ -20,6 +20,5 @@ namespace Scheduler.Models.AppointmentModels
 
         public string ServiceRequest { get; set; }
 
-
     }
 }
