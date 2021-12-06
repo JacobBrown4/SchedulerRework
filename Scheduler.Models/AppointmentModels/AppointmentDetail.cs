@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace Scheduler.Models.AppointmentModels
 {
-    class AppointmentDetail
+    public class AppointmentDetail
     {
+        public int Id { get; set; }
+        public int EmployeeId { get; set; }
+        public int ClientId { get; set; }
+        public string ServiceRequest { get; set; }
+        public DateTime Time { get; set; }
+        public DateTime Duration { get; set; }
     }
 }
