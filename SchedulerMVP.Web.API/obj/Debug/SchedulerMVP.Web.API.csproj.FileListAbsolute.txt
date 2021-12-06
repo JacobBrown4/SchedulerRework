@@ -123,3 +123,5 @@ H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\bin\Microso
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\obj\Debug\SchedulerMVP.Web.API.csproj.CopyComplete
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\obj\Debug\SchedulerMVP.Web.API.dll
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\obj\Debug\SchedulerMVP.Web.API.pdb
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\bin\Swashbuckle.Core.dll
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\bin\WebActivatorEx.dll
