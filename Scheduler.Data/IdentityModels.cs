@@ -33,8 +33,8 @@ namespace SchedulerMVP.Data
         {
             return new ApplicationDbContext();
         }
-
-        //public DbSet<Appointment> Appointments { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder

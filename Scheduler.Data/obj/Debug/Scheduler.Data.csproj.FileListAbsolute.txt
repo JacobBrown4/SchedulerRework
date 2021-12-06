@@ -64,6 +64,5 @@ C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Data\bin\Debug\Syst
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Data\bin\Debug\System.Web.Http.Owin.xml
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Data\obj\Debug\Scheduler.Data.csproj.AssemblyReference.cache
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Data\obj\Debug\Scheduler.Data.csproj.CoreCompileInputs.cache
-C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Data\obj\Debug\Scheduler.Data.csproj.CopyComplete
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Data\obj\Debug\Scheduler.Data.dll
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Data\obj\Debug\Scheduler.Data.pdb

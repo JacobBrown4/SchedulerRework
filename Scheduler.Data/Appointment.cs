@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Scheduler.Data
 {
-    class Appointment
+    public class Appointment
     {
     }
 }

@@ -26,6 +26,8 @@ C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Models\bin\Debug\Mi
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Models\obj\Debug\Scheduler.Models.csproj.AssemblyReference.cache
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Models\obj\Debug\Scheduler.Models.csproj.CoreCompileInputs.cache
-C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Models\obj\Debug\Scheduler.Models.csproj.CopyComplete
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Models\obj\Debug\Scheduler.Models.dll
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Models\obj\Debug\Scheduler.Models.pdb
+C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Models\bin\Debug\Scheduler.Data.dll
+C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Models\bin\Debug\Scheduler.Data.pdb
+C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Models\bin\Debug\Scheduler.Data.dll.config

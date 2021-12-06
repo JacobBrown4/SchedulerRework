@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Scheduler.Models.AppointmentModels
 {
-    class AppointmentList
+    public class AppointmentList
     {
     }
 }
