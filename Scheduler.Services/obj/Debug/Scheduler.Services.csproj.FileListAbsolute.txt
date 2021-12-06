@@ -1,0 +1,15 @@
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\bin\Debug\Scheduler.Services.dll.config
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\bin\Debug\Scheduler.Services.dll
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\bin\Debug\Scheduler.Services.pdb
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\bin\Debug\EntityFramework.dll
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\bin\Debug\EntityFramework.SqlServer.dll
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\bin\Debug\EntityFramework.xml
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\bin\Debug\EntityFramework.SqlServer.xml
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\obj\Debug\Scheduler.Services.csproj.CoreCompileInputs.cache
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\obj\Debug\Scheduler.Services.csproj.CopyComplete
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\obj\Debug\Scheduler.Services.dll
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\obj\Debug\Scheduler.Services.pdb
