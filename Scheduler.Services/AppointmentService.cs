@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Scheduler.Services
 {
-    class AppointmentService
+    public class AppointmentService
     {
     }
 }
