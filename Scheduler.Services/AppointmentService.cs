@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Scheduler.Data;
+using Scheduler.Models.AppointmentModels;
+using SchedulerMVP.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -14,6 +17,23 @@ namespace Scheduler.Services
             _userId = userId;
         }
 
+<<<<<<< HEAD
 
+=======
+        public bool CreateAppointment(AppointmentCreate model)
+        {
+            var entity =
+                new Appointment()
+                {
+                    ClientId = model.ClientId,
+                    EmployeeId = model.EmployeeId
+                };
+            using (var ctx = new ApplicationDbContext())
+            {
+                ctx.Enrollment.Add(entity);
+                return ctx.SaveChanges() == 1;
+            }
+        }
+>>>>>>> develop
     }
 }
