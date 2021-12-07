@@ -16,14 +16,15 @@ namespace Scheduler.Data
         public string ServiceRequest { get; set; }
         [Required]
         public DateTime Time { get; set; }
-        public DateTime Duration { get; set; } 
+        public DateTime Duration { get; set; }
 
 
         [Required, ForeignKey(nameof(Employee))]
         public int EmployeeId { get; set; }
+        //public virtual Employee Employee { get; set;}
 
         [Required, ForeignKey(nameof(Client))]
         public int ClientId { get; set; }
-
+        public virtual Client Client { get; set; }
     }
 }
