@@ -123,6 +123,7 @@ H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\bin\Microso
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\obj\Debug\SchedulerMVP.Web.API.csproj.CopyComplete
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\obj\Debug\SchedulerMVP.Web.API.dll
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\obj\Debug\SchedulerMVP.Web.API.pdb
+<<<<<<< HEAD
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\SchedulerMVP.Web.API\bin\SchedulerMVP.Web.API.dll.config
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\SchedulerMVP.Web.API\bin\SchedulerMVP.Web.API.dll
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\SchedulerMVP.Web.API\bin\SchedulerMVP.Web.API.pdb
@@ -250,3 +251,7 @@ C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\SchedulerMVP.Web.API\obj\Debu
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\SchedulerMVP.Web.API\obj\Debug\SchedulerMVP.Web.API.csproj.CopyComplete
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\SchedulerMVP.Web.API\obj\Debug\SchedulerMVP.Web.API.dll
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\SchedulerMVP.Web.API\obj\Debug\SchedulerMVP.Web.API.pdb
+=======
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\bin\Swashbuckle.Core.dll
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\bin\WebActivatorEx.dll
+>>>>>>> a9849a56777a62b1d522e9113085309d18dad0b2
