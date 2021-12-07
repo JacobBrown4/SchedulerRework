@@ -14,7 +14,7 @@ namespace Scheduler.Models.AppointmentModels
         public int ClientId { get; set; }
         public ClientList  Client { get; set; }
         public int EmployeeId { get; set; }
-        //public EmployeeList Employee { get; set; }
+        public EmployeeList Employee { get; set; }
         public DateTime Time { get; set; }
     }
 }

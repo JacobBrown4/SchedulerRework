@@ -22,6 +22,8 @@ namespace Scheduler.Data
 
         public TimeSpan Duration { get; set; }
 
-        public string FullName() => $"{FirstName} {LastName}";
+        public virtual List<Appointment> Appointments { get; set; } = new List<Appointment>();
+
+        public virtual string FullName() => $"{FirstName} {LastName}";
     }
 }

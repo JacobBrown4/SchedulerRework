@@ -12,18 +12,21 @@ namespace Scheduler.Data
     {
         [Key]
         public int Id { get; set; }
+
         [Required]
         public string ServiceRequest { get; set; }
+
         [Required]
         public DateTime Time { get; set; }
+
         public DateTime Duration { get; set; }
 
 
-        [Required, ForeignKey(nameof(Employee))]
+        [ForeignKey(nameof(Employee))]
         public int EmployeeId { get; set; }
-        //public virtual Employee Employee { get; set;}
+        public virtual Employee Employee { get; set;}
 
-        [Required, ForeignKey(nameof(Client))]
+        [ForeignKey(nameof(Client))]
         public int ClientId { get; set; }
         public virtual Client Client { get; set; }
     }

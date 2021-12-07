@@ -1,5 +1,6 @@
 ﻿using Scheduler.Data;
 using Scheduler.Models.ClientModels;
+using Scheduler.Models.EmployeeModels;
 using SchedulerMVP.Data;
 using System;
 using System.Collections.Generic;
@@ -11,9 +12,7 @@ namespace Scheduler.Services
 {
     public class ClientService
     {
-        
-       /*
-        
+                    
         private readonly Guid _userId;
         public ClientService(Guid userId)
         {
@@ -51,7 +50,7 @@ namespace Scheduler.Services
             }
         }
 
-        public IEnumerable<ClientListItem> GetClients()
+        public IEnumerable<ClientList> GetClients()
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -60,7 +59,7 @@ namespace Scheduler.Services
                         .Clients.AsEnumerable()
                         .Select(
                         e =>
-                            new ClientListItem
+                            new ClientList
                             {
                                 Id = e.Id,
                                 Name = e.FullName()
@@ -80,11 +79,11 @@ namespace Scheduler.Services
                     {
                         Id = entity.Id,
                         FirstName = entity.FirstName,
-                        LastName = entity.LastName,
-                        Employees = entity.Appointments.Select(c => new EmployeeListItem
+                        LastName = entity.LastName,                       
+                        Employees = entity.Appointments.Select(c => new EmployeeList
                         {
-                            Id = c.Id,
-                            Name = c.Employee.Name
+                            Id = c.Id,                          
+                            Name = c.Employee.FullName()
                         }).ToList()
                     };
             }
@@ -115,8 +114,6 @@ namespace Scheduler.Services
                 ctx.Clients.Remove(entity);
                 return ctx.SaveChanges() == 1;
             }
-        }
-
-        */
+        }        
     }
 }

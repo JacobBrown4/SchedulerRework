@@ -1,5 +1,6 @@
 ﻿using DocuSign.eSign.Model;
 using Scheduler.Data;
+using Scheduler.Models.ClientModels;
 using Scheduler.Models.EmployeeModels;
 using SchedulerMVP.Data;
 using System;
@@ -51,26 +52,26 @@ namespace Scheduler.Services
             }
         }
 
-        //public EmployeeDetail GetEmployeeById(int id)
-        //{
-        //using (var ctx = new ApplicationDbContext())
-        //{
-        //    var entity = ctx
-        //        .Employees
-        //        .Single(e => e.Id == id);
-        //    return
-        //        new EmployeeDetail
-        //        {
-        //            Id = entity.Id,
-        //            FullName = entity.FullName,
-        //            Clients = entity.Appointments.Select(x => new ClientListItem
-        //            {
-        //                Id = x.Client.Id,
-        //                Name = x.Client.FullName()
-        //            }).ToList()
-        //        };
-        //}
-        // }
+        public EmployeeDetail GetEmployeeById(int id)
+        {
+        using (var ctx = new ApplicationDbContext())
+        {
+            var entity = ctx
+                .Employees
+                .Single(e => e.Id == id);
+            return
+               new EmployeeDetail
+               {
+                    Id = entity.Id,
+                    Name = entity.FullName(),
+                    Clients = entity.Appointments.Select(x => new ClientList
+                    {
+                        Id = x.Client.Id,
+                        Name = x.Client.FullName()
+                    }).ToList()
+               };
+        }
+        }
 
         public bool UpdateEmployee(EmployeeEdit model)
         {

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Scheduler.Models.AppointmentModels;
+using Scheduler.Models.EmployeeModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -18,6 +20,9 @@ namespace Scheduler.Models.ClientModels
         public string Email { get; set; }    
         
         public string PhoneNumber { get; set; }
+
+        public List<AppointmentList> Appointments { get; set; }
+        public List<EmployeeList> Employees { get; set; }
 
     }
 }

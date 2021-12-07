@@ -1,4 +1,5 @@
 ﻿using Scheduler.Models.AppointmentModels;
+using Scheduler.Models.ClientModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,6 @@ namespace Scheduler.Models.EmployeeModels
         public string EmployeeOccupation { get; set; }
 
         public List<AppointmentList> Appointments { get; set; }
+        public List<ClientList> Clients { get; set; }
     }
 }
