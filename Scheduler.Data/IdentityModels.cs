@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Security.Claims;
@@ -6,6 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
+using Microsoft.AspNetCore.Identity;
 using Scheduler.Data;
 
 namespace SchedulerMVP.Data
@@ -29,18 +31,9 @@ namespace SchedulerMVP.Data
         {
         }
         
-        public static ApplicationDbContext Create()
-        {
-            return new ApplicationDbContext();
-        }
-<<<<<<< HEAD
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
-=======
-
-        public DbSet<Appointment> Appointments { get; set; }
         public DbSet<Client> Clients { get; set; }
->>>>>>> a9849a56777a62b1d522e9113085309d18dad0b2
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
@@ -51,6 +44,11 @@ namespace SchedulerMVP.Data
                 .Configurations
                 .Add(new IdentityUserLoginConfiguration())
                 .Add(new IdentityUserRoleConfiguration());
+        }
+
+        public int SaveChanges()
+        {
+            throw new NotImplementedException();
         }
     }
 
