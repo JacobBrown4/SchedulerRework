@@ -31,3 +31,7 @@ C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Models\obj\Debug\Sc
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Models\bin\Debug\Scheduler.Data.dll
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Models\bin\Debug\Scheduler.Data.pdb
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Models\bin\Debug\Scheduler.Data.dll.config
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Models\bin\Debug\Scheduler.Data.dll
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Models\bin\Debug\Scheduler.Data.pdb
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Models\bin\Debug\Scheduler.Data.dll.config
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Models\obj\Debug\Scheduler.Models.csproj.AssemblyReference.cache

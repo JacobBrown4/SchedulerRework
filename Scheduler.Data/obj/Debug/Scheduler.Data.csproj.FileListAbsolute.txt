@@ -28,7 +28,6 @@ H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Data\bin\Debug\Newtons
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Data\bin\Debug\System.Net.Http.Formatting.xml
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Data\bin\Debug\System.Web.Http.xml
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Data\bin\Debug\System.Web.Http.Owin.xml
-H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Data\obj\Debug\Scheduler.Data.csproj.AssemblyReference.cache
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Data\obj\Debug\Scheduler.Data.csproj.CoreCompileInputs.cache
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Data\obj\Debug\Scheduler.Data.dll
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Data\obj\Debug\Scheduler.Data.pdb
@@ -66,3 +65,4 @@ C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Data\obj\Debug\Sche
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Data\obj\Debug\Scheduler.Data.csproj.CoreCompileInputs.cache
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Data\obj\Debug\Scheduler.Data.dll
 C:\ElevenFiftyProjects\SunnyScheduler\SchedulerMVP\Scheduler.Data\obj\Debug\Scheduler.Data.pdb
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Data\obj\Debug\Scheduler.Data.csproj.CopyComplete
