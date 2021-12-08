@@ -91,7 +91,6 @@ H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\bin\Schedul
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\bin\Scheduler.Models.pdb
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\bin\Scheduler.Models.dll.config
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\bin\Scheduler.Services.pdb
-H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\bin\Scheduler.Services.dll.config
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\bin\Newtonsoft.Json.xml
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\bin\System.Net.Http.Formatting.xml
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\bin\System.Web.Helpers.xml
@@ -125,3 +124,4 @@ H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\obj\Debug\S
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\obj\Debug\SchedulerMVP.Web.API.csproj.CopyComplete
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\obj\Debug\SchedulerMVP.Web.API.dll
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\obj\Debug\SchedulerMVP.Web.API.pdb
+H:\ElevenFiftyProjects\Assignments\SchedulerMVP\SchedulerMVP.Web.API\bin\Scheduler.Services.dll.config

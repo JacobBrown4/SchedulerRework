@@ -16,7 +16,7 @@ namespace Scheduler.Data
         [Required]
         public string LastName { get; set; }
 
-        //public virtual List<Employee> Employees { get; set; } = new List<Employee>();
+        public virtual List<Employee> Employees { get; set; } = new List<Employee>();
 
         public string FullName() => $"{FirstName} {LastName}";
 
