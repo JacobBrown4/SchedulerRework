@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using System;
+using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration;
 using System.Data.Entity.ModelConfiguration.Conventions;
 using System.Security.Claims;
@@ -6,6 +7,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
+using Microsoft.AspNetCore.Identity;
 using Scheduler.Data;
 
 namespace SchedulerMVP.Data
@@ -13,7 +15,7 @@ namespace SchedulerMVP.Data
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit https://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
     public class ApplicationUser : IdentityUser
     {
-        public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager, string authenticationType)
+        public async Task<ClaimsIdentity> GenerateUserIdentityAsync(Microsoft.AspNet.Identity.UserManager<ApplicationUser> manager, string authenticationType)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
             var userIdentity = await manager.CreateIdentityAsync(this, authenticationType);
@@ -34,7 +36,10 @@ namespace SchedulerMVP.Data
             return new ApplicationDbContext();
         }
 
-        //public DbSet<Appointment> Appointments { get; set; }
+        public DbSet<Employee> Employees { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }       
+        public DbSet<Client> Clients { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
@@ -45,6 +50,11 @@ namespace SchedulerMVP.Data
                 .Configurations
                 .Add(new IdentityUserLoginConfiguration())
                 .Add(new IdentityUserRoleConfiguration());
+        }
+
+        public int SaveChanges()
+        {
+            throw new NotImplementedException();
         }
     }
 

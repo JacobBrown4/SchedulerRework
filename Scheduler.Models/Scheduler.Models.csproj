@@ -72,5 +72,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Scheduler.Data\Scheduler.Data.csproj">
+      <Project>{060b2261-2a7c-4841-968b-df87b0a72011}</Project>
+      <Name>Scheduler.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
