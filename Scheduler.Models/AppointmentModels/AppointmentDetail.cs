@@ -18,5 +18,6 @@ namespace Scheduler.Models.AppointmentModels
         public DateTime Duration { get; set; }
         public ClientList Client { get; set; }
         public EmployeeList Employee { get; set; }
+
     }
 }
