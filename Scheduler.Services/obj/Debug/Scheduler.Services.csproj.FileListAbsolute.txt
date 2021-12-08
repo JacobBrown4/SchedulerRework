@@ -43,3 +43,7 @@ H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\obj\Debug\Sch
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\obj\Debug\Scheduler.Services.csproj.CopyComplete
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\obj\Debug\Scheduler.Services.dll
 H:\ElevenFiftyProjects\Assignments\SchedulerMVP\Scheduler.Services\obj\Debug\Scheduler.Services.pdb
+C:\Users\jshel\Documents\ElevenFiftyProjects\TeamEarth\SchedulerMVP\Scheduler.Services\obj\Debug\Scheduler.Services.csproj.AssemblyReference.cache
+C:\Users\jshel\Documents\ElevenFiftyProjects\TeamEarth\SchedulerMVP\Scheduler.Services\obj\Debug\Scheduler.Services.csproj.CoreCompileInputs.cache
+C:\Users\jshel\Documents\ElevenFiftyProjects\TeamEarth\SchedulerMVP\Scheduler.Services\obj\Debug\Scheduler.Services.dll
+C:\Users\jshel\Documents\ElevenFiftyProjects\TeamEarth\SchedulerMVP\Scheduler.Services\obj\Debug\Scheduler.Services.pdb
