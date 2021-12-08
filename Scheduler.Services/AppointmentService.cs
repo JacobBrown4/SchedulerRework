@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Scheduler.Data;
+using Scheduler.Models.AppointmentModels;
+using SchedulerMVP.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,7 +27,7 @@ namespace Scheduler.Services
                 };
             using (var ctx = new ApplicationDbContext())
             {
-                ctx.Enrollment.Add(entity);
+                ctx.Appointments.Add(entity);
                 return ctx.SaveChanges() == 1;
             }
         }
