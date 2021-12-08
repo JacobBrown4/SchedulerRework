@@ -37,8 +37,9 @@ namespace SchedulerMVP.Data
         }
 
         public DbSet<Employee> Employees { get; set; }
-        public DbSet<Appointment> Appointments { get; set; }
+        public DbSet<Appointment> Appointments { get; set; }       
         public DbSet<Client> Clients { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder
@@ -49,6 +50,11 @@ namespace SchedulerMVP.Data
                 .Configurations
                 .Add(new IdentityUserLoginConfiguration())
                 .Add(new IdentityUserRoleConfiguration());
+        }
+
+        public int SaveChanges()
+        {
+            throw new NotImplementedException();
         }
     }
 
