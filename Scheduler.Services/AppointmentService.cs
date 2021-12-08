@@ -34,7 +34,7 @@ namespace Scheduler.Services
             }
         }
 
-        /*public IEnumerable<AppointmentList> GetAppointments()
+        public IEnumerable<AppointmentList> GetAppointments()
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -53,9 +53,9 @@ namespace Scheduler.Services
                             Id = e.Client.Id
                         },
                         EmployeeId = e.EmployeeId,
-                        Employee = new Models.Employee.EmployeeList
+                        Employee = new EmployeeList
                         {
-                            Name = e.Employee.Name,
+                            Name = e.Employee.FullName(),
                             Id = e.Employee.Id
                         },
                         Time = e.Time
@@ -81,15 +81,15 @@ namespace Scheduler.Services
                             Id = entity.Client.Id
                         },
                         EmployeeId = entity.EmployeeId,
-                        Employee = new Models.Employee.EmployeeList
+                        Employee = new EmployeeList
                         {
-                            Name = entity.Employee.Name,
+                            Name = entity.Employee.FullName(),
                             Id = entity.Employee.Id
                         },
                         Time = entity.Time
                     };
             }
-        }*/
+        }
 
         public bool UpdateAppointment(AppointmentDetail model)
         {
