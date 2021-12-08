@@ -1,7 +1,4 @@
-﻿using Scheduler.Data;
-using Scheduler.Models.AppointmentModels;
-using SchedulerMVP.Data;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -32,4 +29,5 @@ namespace Scheduler.Services
             }
         }
     }
+    //comment to add a test commit
 }
