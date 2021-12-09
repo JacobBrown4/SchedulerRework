@@ -12,8 +12,6 @@ namespace SchedulerMVP.Web.API.Controllers
 {
     public class ClientController : ApiController
     {
-        /*
-         
         private ClientService CreateClientService()
         {
             var userId = Guid.Parse(User.Identity.GetUserId());
@@ -63,8 +61,6 @@ namespace SchedulerMVP.Web.API.Controllers
             if (!service.DeleteClient(id))
                 return InternalServerError();
             return Ok();
-        }
-
-        */
+        }       
     }
 }
