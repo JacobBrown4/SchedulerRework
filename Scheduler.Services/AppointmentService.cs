@@ -25,7 +25,10 @@ namespace Scheduler.Services
                 new Appointment()
                 {
                     ClientId = model.ClientId,
-                    EmployeeId = model.EmployeeId
+                    EmployeeId = model.EmployeeId,
+                    Time = model.Time,
+                    Duration = model.Duration.AddHours(1),
+                    ServiceRequest = model.ServiceRequest
                 };
             using (var ctx = new ApplicationDbContext())
             {
@@ -58,7 +61,8 @@ namespace Scheduler.Services
                             Name = e.Employee.FullName(),
                             Id = e.Employee.Id
                         },
-                        Time = e.Time
+                        Time = e.Time,
+                        Duration = e.Time.AddHours(1)
                     }).ToArray();
             }
         }
@@ -86,7 +90,8 @@ namespace Scheduler.Services
                             Name = entity.Employee.FullName(),
                             Id = entity.Employee.Id
                         },
-                        Time = entity.Time
+                        Time = entity.Time,
+                        Duration = entity.Time.AddHours(1)
                     };
             }
         }
@@ -102,6 +107,7 @@ namespace Scheduler.Services
                 entity.ClientId = model.ClientId;
                 entity.EmployeeId = model.EmployeeId;
                 entity.Time = model.Time;
+                entity.Duration = model.Time.AddHours(1);
 
                 return ctx.SaveChanges() == 1;
             }
