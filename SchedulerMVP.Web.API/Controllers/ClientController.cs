@@ -61,6 +61,6 @@ namespace SchedulerMVP.Web.API.Controllers
             if (!service.DeleteClient(id))
                 return InternalServerError();
             return Ok();
-        }       
+        }
     }
 }
