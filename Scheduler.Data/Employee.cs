@@ -18,7 +18,7 @@ namespace Scheduler.Data
         [Required]
         public string LastName { get; set; }
        
-        public string EmployeeOccupation { get; set; }
+        public string Occupation { get; set; }
 
         public TimeSpan Duration { get; set; }
 
