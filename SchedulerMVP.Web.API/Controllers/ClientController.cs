@@ -12,7 +12,7 @@ namespace SchedulerMVP.Web.API.Controllers
 {
     public class ClientController : ApiController
     {
-        /*
+        
          
         private ClientService CreateClientService()
         {
@@ -65,6 +65,6 @@ namespace SchedulerMVP.Web.API.Controllers
             return Ok();
         }
 
-        */
+        
     }
 }
