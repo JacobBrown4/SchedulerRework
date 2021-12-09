@@ -27,7 +27,7 @@ namespace Scheduler.Services
                     ClientId = model.ClientId,
                     EmployeeId = model.EmployeeId,
                     Time = model.Time,
-                    Duration = model.Duration.AddHours(1),
+                    Duration = model.Time.AddHours(1),
                     ServiceRequest = model.ServiceRequest
                 };
             using (var ctx = new ApplicationDbContext())
