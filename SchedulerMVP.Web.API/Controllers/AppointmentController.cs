@@ -9,6 +9,7 @@ using System.Web.Http;
 
 namespace SchedulerMVP.Web.API.Controllers
 {
+    [Authorize]
     public class AppointmentController : ApiController
     {
         private AppointmentService CreateAppointmentService()

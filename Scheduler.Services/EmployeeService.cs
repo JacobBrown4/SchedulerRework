@@ -43,7 +43,7 @@ namespace Scheduler.Services
             {
                 var query =
                     ctx
-                        .Employees
+                        .Employees.AsEnumerable()
                         .Select(
                         e =>
                             new EmployeeList
