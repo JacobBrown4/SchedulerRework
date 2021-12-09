@@ -10,6 +10,7 @@ using System.Web.Http;
 
 namespace SchedulerMVP.Web.API.Controllers
 {
+    [Authorize]
     public class ClientController : ApiController
     {
         private ClientService CreateClientService()
