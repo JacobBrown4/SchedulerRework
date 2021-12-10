@@ -25,7 +25,10 @@ namespace Scheduler.Services
                 new Appointment()
                 {
                     ClientId = model.ClientId,
-                    EmployeeId = model.EmployeeId
+                    EmployeeId = model.EmployeeId,
+                    Time = model.Time,
+                    Duration = model.Duration,
+                    ServiceRequest = model.ServiceRequest
                 };
             using (var ctx = new ApplicationDbContext())
             {
