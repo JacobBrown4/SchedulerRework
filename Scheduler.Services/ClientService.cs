@@ -30,23 +30,8 @@ namespace Scheduler.Services
             using (var ctx = new ApplicationDbContext())
             {
                 ctx.Clients.Add(entity);
-                ctx.SaveChanges();
-                int iD = ctx.Clients.AsEnumerable().Last().Id;
-                int savedObjects = 0;
-                if (model.Employees != null)
-                {
-                    foreach (int employee in model.Employees)
-                    {
-                        Appointment appointment = new Appointment
-                        {
-                            EmployeeId = employee,
-                            ClientId = iD,
-                        };
-                        ctx.Appointments.Add(appointment);
-                        ++savedObjects;
-                    };
-                }
-                return ctx.SaveChanges() == savedObjects;
+                               
+                return ctx.SaveChanges() == 1;
             }
         }
 

@@ -13,10 +13,11 @@ namespace Scheduler.Services
 {
     public class EmployeeService
     {
-        private readonly Guid _employeeId;
-        public EmployeeService(Guid employeeId)
+
+        private readonly Guid _userId;
+        public EmployeeService(Guid userId)
         {
-            _employeeId = employeeId;
+            _userId = userId;
         }
 
         public bool CreateEmployee(EmployeeCreate model)
@@ -25,8 +26,10 @@ namespace Scheduler.Services
                 new Employee()
                 {
                     FirstName = model.FirstName,
-                    LastName = model.LastName
+                    LastName = model.LastName,
+                    Occupation = model.Occupation
                 };
+
             using (var ctx = new ApplicationDbContext())
             {
                 ctx.Employees.Add(entity);
@@ -40,7 +43,7 @@ namespace Scheduler.Services
             {
                 var query =
                     ctx
-                        .Employees
+                        .Employees.AsEnumerable()
                         .Select(
                         e =>
                             new EmployeeList
