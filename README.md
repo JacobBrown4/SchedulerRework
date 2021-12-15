@@ -7,7 +7,7 @@ The goal of this project was to work through the agile process in a team to crea
 Our scheduler MVP mimics what a business might use to schedule clients. The program stores client information, employee information, and appointment information in seperate data tables. 
 
 ## Requirments of the MVP
-Our group was required:
+Our group was required to:
 - Complete planning documentation and wireframe
 - Create SCRUM board to delegate tasks
 - Each group member was required to create one custom data table
