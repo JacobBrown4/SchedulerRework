@@ -1,4 +1,5 @@
 ﻿using Scheduler.Data;
+using Scheduler.Models.AppointmentModels;
 using Scheduler.Models.ClientModels;
 using Scheduler.Models.EmployeeModels;
 using SchedulerMVP.Data;
@@ -24,7 +25,9 @@ namespace Scheduler.Services
                 new Client()
                 {
                     FirstName = model.FirstName,
-                    LastName = model.LastName
+                    LastName = model.LastName,
+                    Email = model.Email,
+                    PhoneNumber = model.PhoneNumber
                 };
 
             using (var ctx = new ApplicationDbContext())
@@ -47,7 +50,9 @@ namespace Scheduler.Services
                             new ClientList
                             {
                                 Id = e.Id,
-                                Name = e.FullName()
+                                Name = e.FullName(),
+                                Email= e.Email,
+                                PhoneNumber= e.PhoneNumber
                             }).ToArray();
                 return query;
             }
@@ -64,11 +69,17 @@ namespace Scheduler.Services
                     {
                         Id = entity.Id,
                         FirstName = entity.FirstName,
-                        LastName = entity.LastName,                       
-                        Employees = entity.Appointments.Select(c => new EmployeeList
+                        LastName = entity.LastName,
+                        Email = entity.Email,
+                        PhoneNumber = entity.PhoneNumber,
+                        Appointments = entity.Appointments.Select(c => new AppointmentList
                         {
                             Id = c.Id,                          
-                            Name = c.Employee.FullName()
+                            Time = c.Time.ToShortDateString(),
+                            ServiceRequested = c.ServiceRequested,
+                            Client = c.Client.FullName(),
+                            Employee = c.Employee.FullName()
+
                         }).ToList()
                     };
             }
@@ -83,6 +94,8 @@ namespace Scheduler.Services
 
                 entity.FirstName = model.FirstName;
                 entity.LastName = model.LastName;
+                entity.Email = model.Email;
+                entity.PhoneNumber = model.PhoneNumber;
 
                 return ctx.SaveChanges() == 1;
             }

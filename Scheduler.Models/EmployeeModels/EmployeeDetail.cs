@@ -17,6 +17,6 @@ namespace Scheduler.Models.EmployeeModels
         public string EmployeeOccupation { get; set; }
 
         public List<AppointmentList> Appointments { get; set; }
-        public List<ClientList> Clients { get; set; }
+        public List<string> Clients { get; set; }
     }
 }

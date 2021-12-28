@@ -11,13 +11,16 @@ namespace Scheduler.Models.AppointmentModels
     public class AppointmentDetail
     {
         public int Id { get; set; }
-        public int EmployeeId { get; set; }
+        public string ServiceRequested { get; set; }
+        public string AppointmentInfo { get; set; }
+        public string Location { get; set; }
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
+        public TimeSpan Duration { get; set; }
         public int ClientId { get; set; }
-        public string ServiceRequest { get; set; }
-        public DateTime Time { get; set; }
-        public DateTime Duration { get; set; }
-        public ClientList Client { get; set; }
-        public EmployeeList Employee { get; set; }
+        public string Client { get; set; }
+        public int EmployeeId { get; set; }
+        public string Employee { get; set; }
 
     }
 }

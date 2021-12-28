@@ -22,7 +22,6 @@ namespace Scheduler.Models.ClientModels
         public string PhoneNumber { get; set; }
 
         public List<AppointmentList> Appointments { get; set; }
-        public List<EmployeeList> Employees { get; set; }
 
     }
 }

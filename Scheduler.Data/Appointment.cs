@@ -14,12 +14,17 @@ namespace Scheduler.Data
         public int Id { get; set; }
 
         [Required]
-        public string ServiceRequest { get; set; }
+        public string ServiceRequested { get; set; }
+        [Required]
+        public string AppointmentInfo { get; set; }
+        [Required]
+        public string Location { get; set; }
 
         [Required]
         public DateTime Time { get; set; }
-
-        public DateTime Duration { get; set; }
+        [Required]
+        //Request style "00:00:00" 
+        public TimeSpan Duration { get; set; }
 
 
         [ForeignKey(nameof(Employee))]

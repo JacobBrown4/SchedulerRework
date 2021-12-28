@@ -54,6 +54,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppointmentModels\AppointmentClientCreate.cs" />
     <Compile Include="AppointmentModels\AppointmentCreate.cs" />
     <Compile Include="AppointmentModels\AppointmentDetail.cs" />
     <Compile Include="AppointmentModels\AppointmentEdit.cs" />

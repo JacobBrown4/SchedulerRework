@@ -9,16 +9,24 @@ namespace Scheduler.Models.AppointmentModels
 {
     public class AppointmentCreate
     {
+
         [Required]
-        public int ClientId { get; set; }
+        [Display(Name ="Services Requested")]
+        public string ServiceRequested { get; set; }
         [Required]
-        public int EmployeeId { get; set; }
+        public string AppointmentInfo { get; set; }
+        [Required]
+        public string Location { get; set; }
+
         [Required]
         public DateTime Time { get; set; }
         [Required]
-        public DateTime Duration { get; set; }
-
-        public string ServiceRequest { get; set; }
+        //Request style "00:00:00" 
+        public TimeSpan Duration { get; set; }
+        [Required]
+        public int EmployeeId { get; set; }
+        [Required]
+        public int ClientId { get; set; }
 
     }
 }

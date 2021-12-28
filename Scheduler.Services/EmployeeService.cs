@@ -1,5 +1,6 @@
 ﻿using DocuSign.eSign.Model;
 using Scheduler.Data;
+using Scheduler.Models.AppointmentModels;
 using Scheduler.Models.ClientModels;
 using Scheduler.Models.EmployeeModels;
 using SchedulerMVP.Data;
@@ -57,23 +58,29 @@ namespace Scheduler.Services
 
         public EmployeeDetail GetEmployeeById(int id)
         {
-        using (var ctx = new ApplicationDbContext())
-        {
-            var entity = ctx
-                .Employees
-                .Single(e => e.Id == id);
-            return
-               new EmployeeDetail
-               {
-                    Id = entity.Id,
-                    Name = entity.FullName(),
-                    Clients = entity.Appointments.Select(x => new ClientList
-                    {
-                        Id = x.Client.Id,
-                        Name = x.Client.FullName()
-                    }).ToList()
-               };
-        }
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity = ctx
+                    .Employees
+                    .Single(e => e.Id == id);
+                return
+                   new EmployeeDetail
+                   {
+                       Id = entity.Id,
+                       Name = entity.FullName(),
+                       EmployeeOccupation = entity.Occupation,
+                       Clients = entity.Appointments.Select(x => x.Client.FullName()).ToList(),
+                       Appointments = entity.Appointments.Select(c => new AppointmentList
+                       {
+                           Id = c.Id,
+                           Time = c.Time.ToShortDateString(),
+                           ServiceRequested = c.ServiceRequested,
+                           Client = c.Client.FullName(),
+                           Employee = c.Employee.FullName()
+
+                       }).ToList()
+                   };
+            }
         }
 
         public bool UpdateEmployee(EmployeeEdit model)
@@ -86,6 +93,7 @@ namespace Scheduler.Services
 
                 entity.FirstName = model.FirstName;
                 entity.LastName = model.LastName;
+                entity.Occupation = model.Occupation;
 
                 return ctx.SaveChanges() == 1;
             }

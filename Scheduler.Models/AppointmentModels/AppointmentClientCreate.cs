@@ -7,14 +7,13 @@ using System.Threading.Tasks;
 
 namespace Scheduler.Models.AppointmentModels
 {
-    public class AppointmentEdit
+    public class AppointmentClientCreate
     {
-        [Required]
-        public int Id { get; set; }
         [Required]
         [Display(Name = "Services Requested")]
         public string ServiceRequested { get; set; }
         [Required]
+        [Display(Name = "Appointment Info")]
         public string AppointmentInfo { get; set; }
         [Required]
         public string Location { get; set; }
@@ -27,7 +26,14 @@ namespace Scheduler.Models.AppointmentModels
         [Required]
         public int EmployeeId { get; set; }
         [Required]
-        public int ClientId { get; set; }
-
+        public string ClientFirstName { get; set; }
+        [Required]
+        public string ClientLastName { get; set; }
+        [Required]
+        [EmailAddress]
+        public string ClientEmail { get; set; }
+        [Required]
+        [Phone]
+        public string ClientPhoneNumber { get; set; }
     }
 }

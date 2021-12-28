@@ -145,21 +145,11 @@
     <Compile Include="Client.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="IdentityModels.cs" />
-    <Compile Include="Migrations\202112091905122_InitialCreate.cs" />
-    <Compile Include="Migrations\202112091905122_InitialCreate.Designer.cs">
-      <DependentUpon>202112091905122_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\202112091905122_InitialCreate.resx">
-      <DependentUpon>202112091905122_InitialCreate.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets" Condition="Exists('..\packages\Microsoft.Extensions.Logging.Abstractions.6.0.0\build\Microsoft.Extensions.Logging.Abstractions.targets')" />

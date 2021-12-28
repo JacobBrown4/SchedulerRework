@@ -15,8 +15,12 @@ namespace Scheduler.Data
         public string FirstName { get; set; }
         [Required]
         public string LastName { get; set; }
-
-        public virtual List<Employee> Employees { get; set; } = new List<Employee>();
+        [Required]//Typical Email validation
+        [EmailAddress]
+        public string Email { get; set; }
+        [Required]
+        [Phone]
+        public string PhoneNumber { get; set; }
         public virtual List<Appointment> Appointments { get; set; } = new List<Appointment>();
 
         public string FullName() => $"{FirstName} {LastName}";

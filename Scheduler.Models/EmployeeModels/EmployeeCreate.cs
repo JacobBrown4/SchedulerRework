@@ -18,7 +18,5 @@ namespace Scheduler.Models.EmployeeModels
 
         [Required]
         public string Occupation { get; set; }
-
-        public List<int> Appointments { get; set; }
     }
 }
